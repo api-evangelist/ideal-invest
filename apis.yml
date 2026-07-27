@@ -1,8 +1,26 @@
 aid: ideal-invest
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ideal-invest.png
 name: Ideal Invest
-description: 'Ideal Invest is a company surfaced as a portfolio company of ribbit-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Ideal Invest (operating as Pravaler) is a Brazilian fintech founded in 2002 and
+  headquartered in Sao Paulo that provides private student financing for higher education. Through
+  its Pravaler platform, students can split tuition payments across roughly twice the duration of a
+  course, with a 100% digital, low-bureaucracy application, competitive monthly interest rates, and
+  no ENEM requirement. Pravaler works with a network of 500+ partner higher-education institutions and
+  has financed more than 400,000 students, channeling over R$12 billion into Brazilian education. The
+  company is backed by Ribbit Capital. As of this enrichment pass Pravaler exposes a consumer web
+  platform (simulation, application, digital signature) but publishes no public developer API,
+  OpenAPI, SDK, or partner integration surface.'
 url: https://raw.githubusercontent.com/api-evangelist/ideal-invest/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +30,44 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
+- Student Financing
+- Lending
+- Education
+- Brazil
+- Consumer Finance
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/ideal-invest-domain-security.yml
+- type: Website
+  url: https://www.pravaler.com.br/
+- type: About
+  url: https://www.pravaler.com.br/sobre-o-pravaler/
+- type: GettingStarted
+  url: https://www.pravaler.com.br/financiamento-estudantil/
+- type: Blog
+  url: https://www.pravaler.com.br/blog/
+- type: Support
+  url: https://www.pravaler.com.br/ajuda/
+- type: HelpCenter
+  url: https://www.pravaler.com.br/ajuda/
+- type: SignUp
+  url: https://cadastro.pravaler.com.br/
+- type: PrivacyPolicy
+  url: https://www.pravaler.com.br/politica-de-privacidade/
+- type: LLMsTxt
+  url: llms/ideal-invest-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
